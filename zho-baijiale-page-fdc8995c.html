@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百家乐 · 简明指南与访问提醒</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fafaf9;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1c1c1c;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+        }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        /* hero */
+        .hero {
+            padding: 3rem 0 2rem;
+            border-bottom: 1px solid #e6e4e0;
+        }
+
+        .hero h1 {
+            font-weight: 480;
+            font-size: 2.2rem;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: #1e1e1e;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            color: #5a5a5a;
+            max-width: 600px;
+        }
+
+        .hero .tagline {
+            display: inline-block;
+            background: #ecebe7;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            color: #3f3f3f;
+            letter-spacing: 0.3px;
+            margin-bottom: 1.4rem;
+        }
+
+        /* 通用区块 */
+        section {
+            padding: 2.8rem 0;
+            border-bottom: 1px solid #efedea;
+        }
+
+        section:last-of-type {
+            border-bottom: 0;
+        }
+
+        h2 {
+            font-weight: 470;
+            font-size: 1.5rem;
+            letter-spacing: -0.01em;
+            margin-bottom: 1.2rem;
+            color: #242424;
+        }
+
+        h3 {
+            font-weight: 440;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.6rem;
+            color: #2c2c2c;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #3a3a3a;
+        }
+
+        .small-note {
+            font-size: 0.9rem;
+            color: #6b6b6b;
+            background: #f3f2ef;
+            padding: 0.8rem 1.2rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 0.2rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 0.6rem;
+            padding-left: 1.4rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #b0aca6;
+        }
+
+        /* 优势卡片（极简） */
+        .advantage-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .advantage-card {
+            flex: 1 1 200px;
+            background: #ffffff;
+            padding: 1.4rem 1.2rem;
+            border-radius: 16px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.02);
+            border: 1px solid #efedeb;
+        }
+
+        .advantage-card h4 {
+            font-weight: 470;
+            font-size: 1.1rem;
+            margin-bottom: 0.4rem;
+            color: #222;
+        }
+
+        .advantage-card p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+            color: #555;
+        }
+
+        /* FAQ 摘要紧凑 */
+        .faq-item {
+            padding: 1rem 0;
+            border-bottom: 1px dashed #e2dfda;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 470;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+            color: #262626;
+        }
+
+        .faq-a {
+            font-size: 0.92rem;
+            color: #5b5b5b;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #e8e5e0;
+            margin: 2rem 0;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem 2rem;
+            padding: 1.5rem 0 0.5rem;
+            font-size: 0.9rem;
+            color: #6b6b6b;
+        }
+
+        .footer-links a {
+            color: #3a3a3a;
+            text-decoration: none;
+            border-bottom: 1px solid #d4d0ca;
+            transition: border-color 0.15s;
+        }
+
+        .footer-links a:hover {
+            border-bottom-color: #1e1e1e;
+        }
+
+        .inline-link {
+            color: #2f2f2f;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #cbc6bf;
+            transition: text-decoration-color 0.15s;
+        }
+
+        .inline-link:hover {
+            text-decoration-color: #1e1e1e;
+        }
+
+        @media (max-width: 540px) {
+            body { padding: 1.2rem 1rem; }
+            .hero h1 { font-size: 1.8rem; }
+            .advantage-card { flex: 1 1 100%; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero 区：简明指南 + 访问提醒 -->
+    <div class="hero">
+        <span class="tagline">简明指南 · 知识向</span>
+        <h1>百家乐：规则、策略与访问提醒</h1>
+        <p>百家乐是国际赌场中节奏最明快的牌戏之一，但它的规则远比想象中简洁。本节从零梳理流程，同时提供一份实用的访问备忘。</p>
+    </div>
+
+    <!-- 优势区：为什么百家乐值得了解 -->
+    <section>
+        <h2>为何许多玩家从百家乐开始</h2>
+        <p>相比二十一点或德州扑克，百家乐几乎没有玩家决策——你只需要在「庄」「闲」「和」之间做选择。这种低介入特性让新手也能迅速理解全局，同时保留悬念感。</p>
+
+        <div class="advantage-grid">
+            <div class="advantage-card">
+                <h4>完全公开</h4>
+                <p>牌盒发牌，荷官按固定规则补牌，不存在暗箱操作空间。</p>
+            </div>
+            <div class="advantage-card">
+                <h4>节奏可控</h4>
+                <p>每局约 30–60 秒，适合短时间体验或长时间观察趋势。</p>
+            </div>
+            <div class="advantage-card">
+                <h4>门槛最低</h4>
+                <p>不需要记忆复杂策略，看懂点数即上手。</p>
+            </div>
+        </div>
+
+        <p style="margin-top: 1.2rem;">如果你希望快速了解并开始尝试，可以前往 <a href="https://zho-baijiale.com" class="inline-link">百家乐</a> 参考实时规则说明与常见玩法差异。</p>
+    </section>
+
+    <!-- 说明区：核心规则 + 访问提醒 -->
+    <section>
+        <h2>规则切片与访问提醒</h2>
+        <p>八副牌混合，发给庄家与闲家各两张，依点数决定是否补第三张。最接近 9 点的一方获胜。其中「庄」的抽水（5%）和「和」的高赔率（8:1）是玩家最常讨论的细节。</p>
+
+        <h3>出发前记住三件事</h3>
+        <ul>
+            <li><strong>选择可信的平台</strong> — 并非所有线上环境都使用真随机发牌，建议优先访问已营运多年的站点，例如 <a href="https://zho-baijiale.com" class="inline-link">百家乐</a> 这类专注规则呈现与资讯更新的页面。</li>
+            <li><strong>注意资金边界</strong> — 预先设定上限，不要因为连续胜负改变计划。</li>
+            <li><strong>分清娱乐与预测</strong> — 没有任何系统能稳定预测下一局结果，所有「路纸」仅供回顾。</li>
+        </ul>
+
+        <span class="small-note">💡 访问前确认你的所在地是否允许线上娱乐，必要时使用资讯页面了解规则即可。</span>
+    </section>
+
+    <!-- FAQ 摘要 -->
+    <section>
+        <h2>常见疑问摘要</h2>
+
+        <div class="faq-item">
+            <div class="faq-q">「庄」与「闲」长期胜率哪个更高？</div>
+            <div class="faq-a">庄家因补牌规则拥有微小优势（胜率约 45.86% vs 44.62%），但赌场对庄赢收取 5% 佣金，使得两边期望值接近。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">是否需要学习「看路」？</div>
+            <div class="faq-a">「大路」「珠盘路」是历史结果的图形化记录，许多玩家用来找趋势，但数学上每局独立。了解即可，不必过度依赖。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">线上版本与实体赌场有区别吗？</div>
+            <div class="faq-a">主要差异在于发牌速度与赔率细节。部分线上平台提供「免佣百家乐」，庄赢赔率改为 1:0.5，适合偏好降低波动的玩家。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">最稳妥的起步方式？</div>
+            <div class="faq-a">先通过资讯页面理解规则，再用免费模式（如演示版）操作几十局，熟悉流程后再考虑真实筹码。参考 <a href="https://zho-baijiale.com" class="inline-link">百家乐</a> 的相关指南可以作为起点。</div>
+        </div>
+    </section>
+
+    <!-- 底部链接 -->
+    <hr>
+    <div class="footer-links">
+        <a href="https://zho-baijiale.com">百家乐</a>
+        <span style="color:#b0aca6;">·</span>
+        <a href="#">规则速查</a>
+        <a href="#">策略讨论</a>
+        <a href="#">访问提示</a>
+        <span style="color:#999; font-size:0.8rem; margin-left:auto;">内容仅供参考 · 理性娱乐</span>
+    </div>
+
+</div>
+</body>
+</html>
