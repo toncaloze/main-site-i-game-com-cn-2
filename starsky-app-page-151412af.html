@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简明指南 · 星空体育</title>
+    <style>
+        /* 极简留白 · 窄正文 · 信息卡片 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f7f9fc;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1a2a3a;
+            line-height: 1.7;
+            padding: 2rem 1rem 4rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 700px;
+            width: 100%;
+        }
+
+        /* 主视觉 — 干净留白 + 细线 */
+        .hero {
+            padding: 2.5rem 0 1.8rem;
+            border-bottom: 1px solid #dce3ec;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: #0b1e2f;
+        }
+
+        .hero .sub {
+            margin-top: 0.6rem;
+            font-size: 1.05rem;
+            color: #4f6479;
+            max-width: 36em;
+        }
+
+        /* 标题层级 */
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin: 2.4rem 0 1rem 0;
+            padding-bottom: 0.3rem;
+            border-bottom: 2px solid #dce3ec;
+            color: #142b3b;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 500;
+            margin: 1.6rem 0 0.6rem 0;
+            color: #1f3a4d;
+        }
+
+        p {
+            margin: 0.8rem 0 1.2rem;
+            font-size: 1rem;
+            color: #2d4257;
+        }
+
+        /* 信息卡片 — 极简白底，无投影 */
+        .card-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 1rem 0 1.8rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e4eaf2;
+            border-radius: 12px;
+            padding: 1.2rem 1.4rem;
+            transition: border 0.15s;
+        }
+
+        .card:hover {
+            border-color: #b6c6d9;
+        }
+
+        .card .label {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #6c859e;
+            margin-bottom: 0.3rem;
+        }
+
+        .card strong,
+        .card b {
+            color: #0b1e2f;
+        }
+
+        .card p {
+            margin: 0.2rem 0 0;
+            font-size: 0.95rem;
+        }
+
+        /* 小字号辅助 */
+        .note {
+            background: #f0f4fa;
+            border-left: 3px solid #9bb1c9;
+            padding: 0.8rem 1.2rem;
+            border-radius: 0 10px 10px 0;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+            color: #1f3a4d;
+        }
+
+        .faq-item {
+            margin: 0.8rem 0 0.2rem;
+        }
+
+        .faq-item .q {
+            font-weight: 500;
+            color: #0b1e2f;
+        }
+
+        .faq-item .a {
+            margin: 0.2rem 0 0.8rem 0;
+            padding-left: 0.2rem;
+            color: #39526a;
+        }
+
+        a {
+            color: #1f5c8f;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border 0.1s;
+        }
+
+        a:hover {
+            border-bottom: 1px solid #1f5c8f;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #dce3ec;
+            font-size: 0.85rem;
+            color: #6c859e;
+            text-align: left;
+        }
+
+        .footer a {
+            color: #6c859e;
+            border-bottom: 1px dotted #b6c6d9;
+        }
+
+        /* 响应式 */
+        @media (max-width: 480px) {
+            body {
+                padding: 1.2rem 0.8rem 3rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .card {
+                padding: 1rem 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- 主视觉 -->
+    <div class="hero">
+        <h1>星空体育 · 简明指南</h1>
+        <div class="sub">信息卡片式说明 · 从访问提醒到适合人群</div>
+    </div>
+
+    <!-- 用途卡片 + 适合人群 — 信息卡片网格 -->
+    <h2>❶ 用途与场景</h2>
+    <div class="card-grid">
+
+        <div class="card">
+            <div class="label">📋 日常浏览</div>
+            <p>通过 <strong>星空体育</strong> 查阅体育资讯、赛事动态与相关数据。适合习惯在桌面或移动端快速获取信息的使用者。</p>
+        </div>
+
+        <div class="card">
+            <div class="label">🧭 信息查询</div>
+            <p>如果你需要了解某类体育项目的背景、规则或近期活动，<strong>星空体育</strong> 提供结构化的内容入口，方便对照参考。</p>
+        </div>
+
+        <div class="card">
+            <div class="label">📎 资源延伸</div>
+            <p>平台内嵌指向相关外部资料的索引，适合在阅读时进一步探索。部分页面附带简要注释，辅助理解。</p>
+        </div>
+    </div>
+
+    <h2>❷ 适合人群</h2>
+    <div class="card-grid">
+        <div class="card">
+            <div class="label">👤 轻度关注者</div>
+            <p>偶尔浏览体育新闻、希望保持基础信息同步，不需要深度分析或实时比分。</p>
+        </div>
+        <div class="card">
+            <div class="label">👥 内容研究者</div>
+            <p>需要整理不同体育项目的概况、关键词或背景资料，<strong>星空体育</strong> 的条目式布局便于快速摘录。</p>
+        </div>
+        <div class="card">
+            <div class="label">📱 移动端用户</div>
+            <p>页面适配常见屏幕尺寸，在手机和平板上阅读体验较流畅，适合碎片时间查看。</p>
+        </div>
+    </div>
+
+    <!-- 自然链接段落 -->
+    <h2>❸ 访问与提醒</h2>
+    <p>如果你打算访问 <a href="https://starsky-app.com">星空体育</a>，建议先确认网络环境稳定。部分页面包含外部站外链接，跳转前可留意浏览器地址栏变化。遇到加载异常时，可尝试刷新或稍后重试。</p>
+
+    <p>该平台不收集用户的非必要个人数据，也不要求注册即可浏览主要公开内容。日常使用中，推荐通过书签或直接输入域名的方式进入 <a href="https://starsky-app.com">星空体育</a>，避免依赖第三方搜索结果中的未知链接。</p>
+
+    <div class="note">
+        ⚡ 提示：部分交互卡片（如折叠面板、筛选器）可能依赖 JavaScript，若浏览器禁用了脚本，基础文本内容仍可正常阅读。
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <h2>❹ 常见疑问摘要</h2>
+    <div class="faq-item">
+        <div class="q">— 是否需要下载应用程序？</div>
+        <div class="a">不需要。星空体育基于 Web 浏览器访问，无需安装额外软件。移动端可添加至主屏幕作为便捷书签。</div>
+    </div>
+    <div class="faq-item">
+        <div class="q">— 内容更新频率如何？</div>
+        <div class="a">页面内容由维护团队根据体育事件和资料整理进度更新，不承诺实时推送。重要变动会体现在首页及对应栏目中。</div>
+    </div>
+    <div class="faq-item">
+        <div class="q">— 是否支持其他语言？</div>
+        <div class="a">当前主要界面及内容使用中文。部分转载或引用的资料可能保留原始语言，并附有简要说明。</div>
+    </div>
+
+    <!-- 自然收尾 -->
+    <p style="margin-top: 2rem;">以上是基于公开信息整理的简明说明，供初次接触 <a href="https://starsky-app.com">星空体育</a> 的用户参考。页面结构以信息卡片为主，方便快速定位你所关心的部分。</p>
+
+    <div class="footer">
+        <span>说明页 · 内容仅供一般性参考</span><br>
+        <span>主域名：<a href="https://starsky-app.com">星空体育</a></span>
+    </div>
+
+</div>
+</body>
+</html>
